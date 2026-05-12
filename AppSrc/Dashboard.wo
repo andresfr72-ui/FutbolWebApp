@@ -1,0 +1,97 @@
+﻿Use cWebView.pkg
+Use cWebPanel.pkg
+Use cWebGroup.pkg
+Use cWebSpacer.pkg
+Use cWebHtmlBox.pkg
+
+Use Selectiliga.wo
+Use SelectEquipo.wo
+Use SelectPosicion.wo
+Use SelectEntrador.wo
+Use SelectJugador.wo
+
+Object oDashboard is a cWebView
+
+    Set psCaption to "Dashboard"
+    Set peViewType to vtUndefined
+    Set piMaxWidth to 1024
+    Set psCSSClass to "Dashboard"
+    Set pbShowCaption to False
+
+    Object oWebMainPanel is a cWebPanel
+        Set piColumnCount to 24
+
+        WebSetResponsive piColumnCount rmMobile to 1
+        WebSetResponsive piColumnCount rmTabletPortrait to 16
+
+        Object oTiles_grp is a cWebGroup
+            Set piColumnSpan to 8
+            Set pbShowBorder to False
+            Set pbShowCaption to False
+            Set piColumnCount to 12
+            Set psCSSClass to "TilesGroup"
+
+            Object oTileLigas is a cWebHtmlBox
+                Set piColumnSpan to 6
+                Set psCSSClass to "Tile"
+                Set pbServerOnClick to True
+                Set psHtml to '<div class="WebCon_Sizer" data-ServerOnClick="ligas"><div class="Tile_Title">Ligas</div><div class="Tile_Subtitle">Gestión de ligas</div></div>'
+
+                Procedure OnClick String sId String sParam
+                    Send NavigateForward to oSelectLiga Self
+                End_Procedure
+            End_Object
+
+            Object oTileEquipos is a cWebHtmlBox
+                Set piColumnSpan to 6
+                Set psCSSClass to "Tile Light"
+                Set pbServerOnClick to True
+                Set psHtml to '<div class="WebCon_Sizer" data-ServerOnClick="equipos"><div class="Tile_Title">Equipos</div><div class="Tile_Subtitle">Gestión de equipos</div></div>'
+
+                Procedure OnClick String sId String sParam
+                    Send NavigateForward to oSelectEquipo Self
+                End_Procedure
+            End_Object
+
+            Object oTilePosiciones is a cWebHtmlBox
+                Set piColumnSpan to 6
+                Set psCSSClass to "Tile"
+                Set pbServerOnClick to True
+                Set psHtml to '<div class="WebCon_Sizer" data-ServerOnClick="posiciones"><div class="Tile_Title">Posiciones</div><div class="Tile_Subtitle">Gestión de posiciones</div></div>'
+
+                Procedure OnClick String sId String sParam
+                    Send NavigateForward to oSelectPosicion Self
+                End_Procedure
+            End_Object
+
+            Object oTileEntrenadores is a cWebHtmlBox
+                Set piColumnSpan to 6
+                Set psCSSClass to "Tile Light"
+                Set pbServerOnClick to True
+                Set psHtml to '<div class="WebCon_Sizer" data-ServerOnClick="entrenadores"><div class="Tile_Title">Entrenadores</div><div class="Tile_Subtitle">Gestión de entrenadores</div></div>'
+
+                Procedure OnClick String sId String sParam
+                  Send NavigateForward to oSelectEntrador Self
+                End_Procedure
+            End_Object
+
+            Object oTileJugadores is a cWebHtmlBox
+                Set piColumnSpan to 12
+                Set psCSSClass to "Tile"
+                Set pbServerOnClick to True
+                Set psHtml to '<div class="WebCon_Sizer" data-ServerOnClick="jugadores"><div class="Tile_Title">Jugadores</div><div class="Tile_Subtitle">Gestión de jugadores</div></div>'
+
+                Procedure OnClick String sId String sParam
+                    Send NavigateForward to oSelectJugador Self
+                End_Procedure
+            End_Object
+
+        End_Object
+
+        Object oSpacerRight is a cWebSpacer
+            Set piColumnSpan to 16
+        End_Object
+
+    End_Object
+
+End_Object

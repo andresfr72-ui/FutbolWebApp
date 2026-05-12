@@ -1,0 +1,139 @@
+[Workspace]
+CurrentProject=WebApp.src
+Location=C:\DataFlex Projects\FutbolWebApp\IdeSrc\user_Studio.dsk
+CreateNew=3
+[TabWindows]
+GroupCount=1
+HorizontalGroups=1
+[TabGroup0]
+GroupSize=40
+SelectedTab=10
+[Window0]
+Filename=Workspace Dashboard
+ViewType=101
+Top=21
+Left=0
+Bottom=683
+Right=1188
+TabIndex=0
+TabGroup=0
+[Window1]
+Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\Selectiliga.wo
+ViewType=102
+Top=21
+Left=0
+Bottom=683
+Right=1188
+TabIndex=2
+TabGroup=0
+[Window2]
+Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\ZoomLiga.wo
+ViewType=102
+Top=21
+Left=0
+Bottom=683
+Right=1188
+TabIndex=3
+TabGroup=0
+[Window3]
+Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\SelectEquipo.wo
+ViewType=102
+Top=21
+Left=0
+Bottom=683
+Right=1188
+TabIndex=4
+TabGroup=0
+[Window4]
+Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\ZoomEquipo.wo
+ViewType=1
+Top=21
+Left=0
+Bottom=683
+Right=1188
+CursorLine=0
+CursorColumn=0
+TabIndex=5
+TabGroup=0
+[Window5]
+Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\SelectPosicion.wo
+ViewType=102
+Top=21
+Left=0
+Bottom=683
+Right=1188
+TabIndex=6
+TabGroup=0
+[Window6]
+Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\ZoomPosicion.wo
+ViewType=1
+Top=21
+Left=0
+Bottom=683
+Right=1188
+CursorLine=0
+CursorColumn=0
+TabIndex=7
+TabGroup=0
+[Window7]
+Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\SelectEntrador.wo
+ViewType=102
+Top=21
+Left=0
+Bottom=683
+Right=1188
+TabIndex=8
+TabGroup=0
+[Window8]
+Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\ZoomEntrenador.wo
+ViewType=1
+Top=21
+Left=0
+Bottom=683
+Right=1188
+CursorLine=0
+CursorColumn=0
+TabIndex=9
+TabGroup=0
+[Window9]
+Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\ZoomJugador.wo
+ViewType=1
+Top=21
+Left=0
+Bottom=683
+Right=1188
+CursorLine=0
+CursorColumn=0
+TabIndex=11
+TabGroup=0
+[Window10]
+Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\WebApp.src
+ViewType=1
+Top=21
+Left=0
+Bottom=683
+Right=1188
+CursorLine=0
+CursorColumn=0
+TabIndex=1
+TabGroup=0
+[Window11]
+Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\Dashboard.wo
+ViewType=1
+Top=21
+Left=0
+Bottom=683
+Right=1188
+CursorLine=6
+CursorColumn=11
+TabIndex=12
+TabGroup=0
+[Window12]
+Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\SelectJugador.wo
+ViewType=102
+Top=21
+Left=0
+Bottom=683
+Right=1188
+TabIndex=10
+TabGroup=0
