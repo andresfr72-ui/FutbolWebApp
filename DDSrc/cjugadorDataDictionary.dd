@@ -10,6 +10,8 @@ Class cjugadorDataDictionary is a DataDictionary
         Set Main_File to jugador.File_Number
 
         Set Add_Server_File to equipo.File_Number
+        // Validación CodeMast/CodeType: nacionalidades permitidas para jugadores.
+        Set Field_Validate_msg Field jugador.Nacionalidad to (RefFunc(Validate_Nacionalidad))
 
         Set Foreign_Field_Option DD_KEYFIELD DD_NOPUT to True
         Set Foreign_Field_Option DD_KEYFIELD DD_FINDREQ to True
@@ -17,5 +19,15 @@ Class cjugadorDataDictionary is a DataDictionary
         Set Foreign_Field_Option DD_DEFAULT DD_DISPLAYONLY to True
 
     End_Procedure
+    Function Validate_Nacionalidad String sNacionalidad Returns Integer
+        If (sNacionalidad = "ESP") Function_Return 0
+        If (sNacionalidad = "ARG") Function_Return 0
+        If (sNacionalidad = "FRA") Function_Return 0
+        If (sNacionalidad = "BRA") Function_Return 0
+        If (sNacionalidad = "MAR") Function_Return 0
+
+        Error 300 "La nacionalidad seleccionada no existe en CodeMast para el CodeType NACIONALIDAD."
+        Function_Return 1
+    End_Function
 
 End_Class
