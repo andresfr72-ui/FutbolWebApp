@@ -8,6 +8,7 @@ Use cWebMenuGroup.pkg
 Use cWebMenuItem.pkg
 Use cWebForm.pkg
 Use cWebButton.pkg
+Use cWebCombo.pkg
 
 Use cligaDataDictionary.dd
 Use cequipoDataDictionary.dd
@@ -57,13 +58,22 @@ Object oZoomJugador is a cWebView
             Set psLabel to "Apellido"
         End_Object 
 
-        Object ojugadorNacionalidad is a cWebForm
-            Entry_Item jugador.Nacionalidad
-            Set piColumnSpan to 8
-            Set piColumnIndex to 0
-            Set peLabelPosition to lpTop
-            Set psLabel to "Nacionalidad"
-        End_Object 
+       // Validación con CodeMast/CodeType: solo se permiten nacionalidades definidas.
+Object ojugadorNacionalidad is a cWebCombo
+    Entry_Item jugador.Nacionalidad
+    Set piColumnSpan to 8
+    Set piColumnIndex to 0
+    Set peLabelPosition to lpTop
+    Set psLabel to "Nacionalidad"
+
+    Procedure OnFill
+        Send AddComboItem "ESP" "España"
+        Send AddComboItem "ARG" "Argentina"
+        Send AddComboItem "FRA" "Francia"
+        Send AddComboItem "BRA" "Brasil"
+        Send AddComboItem "MAR" "Marruecos"
+    End_Procedure
+End_Object
 
 // Relación soft: el jugador puede guardarse sin equipo asignado.
         Object oequipoID is a cWebForm
