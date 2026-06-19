@@ -65,6 +65,7 @@ Object oZoomJugador is a cWebView
             Set psLabel to "Nacionalidad"
         End_Object 
 
+// Relación soft: el jugador puede guardarse sin equipo asignado.
         Object oequipoID is a cWebForm
             Entry_Item equipo.ID
             Set piColumnSpan to 2
