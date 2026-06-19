@@ -70,7 +70,7 @@ Object oZoomJugador is a cWebView
             Set piColumnSpan to 2
             Set piColumnIndex to 0
             Set peLabelPosition to lpTop
-            Set psLabel to "EquipoID"
+            Set psLabel to "EquipoID (opcional)"
             Set pbPromptButton to True
 
 // ToDo: Fill in the from-child parent Select view object name for navigate forward
